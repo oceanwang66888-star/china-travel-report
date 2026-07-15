@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="skyquest-nav-logo.png?v=1783606121">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msvalidate.01" content="826828A9926F6F51A0261B2609EABF19" />
+<meta name="baidu-site-verification" content="codeva-vuWWf6DKIx" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<title>SkyQuest Visibility OS — 让品牌成为 AI 时代的首选答案</title>
+<meta name="description" content="SkyQuest 是领先的 AI 可见度操作系统。实时监测 12 个 AI 引擎中的品牌表现，AI 驱动内容生成与策略优化。">
+<meta name="keywords" content="GEO,AI可见度,AI监测,品牌优化,内容生成,ChatGPT优化,Gemini优化,品牌AI优化">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://skyquest.cn/">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"SkyQuest","url":"https://skyquest.cn","slogan":"SkyQuest Visibility OS","description":"SkyQuest 是领先的 AI 可见度操作系统（SkyQuest Visibility OS），帮助企业监测和优化品牌在 ChatGPT、Gemini、Perplexity 等 AI 引擎中的表现。","foundingDate":"2026","contactPoint":{"@type":"ContactPoint","contactType":"sales","availableLanguage":["Chinese","English"]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SkyQuest Visibility OS","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"12 引擎 AI 监测 + 11 引擎内容生成 + 品牌追踪 + 竞品分析。一站式 AI 可见度操作系统。","offers":{"@type":"Offer","availability":"https://schema.org/InStock"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"什么是 AI 可见度（GEO）？","acceptedAnswer":{"@type":"Answer","text":"AI 可见度（Generative Engine Optimization）是让品牌在 ChatGPT、Gemini、Perplexity 等 AI 问答引擎中被准确引用和推荐的系统性优化方法。"}},{"@type":"Question","name":"SkyQuest 支持哪些 AI 引擎？","acceptedAnswer":{"@type":"Answer","text":"SkyQuest 覆盖 12 个主流 AI 引擎：ChatGPT、Gemini、Claude、Perplexity、Grok、DeepSeek、Copilot、Qwen、Kimi、文心一言、豆包、Meta AI。"}},{"@type":"Question","name":"SkyQuest 与传统 SEO 工具有什么区别？","acceptedAnswer":{"@type":"Answer","text":"传统 SEO 优化搜索引擎中的网页排名，SkyQuest 优化 AI 引擎中的品牌引用。AI 引擎通过语义理解生成自然语言答案，而非返回链接列表。SkyQuest 专门针对 AI 的引用机制和语义匹配进行优化。"}},{"@type":"Question","name":"如何衡量 AI 可见度的优化效果？","acceptedAnswer":{"@type":"Answer","text":"SkyQuest 提供品牌提及率（BCR）、情感倾向评分、竞品对比排名、可见度趋势图、引用准确度评估等多维量化指标，支持按时间、引擎、关键词和地域下钻分析。"}},{"@type":"Question","name":"SkyQuest 适合哪些企业使用？","acceptedAnswer":{"@type":"Answer","text":"SkyQuest 适合关注品牌在 AI 生态中表现的企业：出海品牌、B2B 企业、内容驱动品牌、代理商与咨询公司。SaaS 版即开即用，企业版支持私有化部署。"}}]}
+</script>
+
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f5f5f7;
+  --bg-card: #ffffff;
+  --text: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #86868b;
+  --accent: #0071e3;
+  --accent-hover: #0077ed;
+  --border: #d2d2d7;
+  --border-light: #e8e8ed;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --nav-height: 52px;
+  --max-width: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.5; -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, .nav-logo, .lang-switch {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  font-weight: 600; letter-spacing: -0.02em;
+}
+h1 { text-wrap: balance;font-size: clamp(2.4rem, 5vw, 4.5rem); line-height: 1.1; }
+h1 em { white-space: nowrap; }
+h2 { text-wrap: balance;font-size: clamp(1.75rem, 3.2vw, 2.8rem); line-height: 1.15; margin-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; line-height: 1.3; margin-bottom: 0.35rem; }
+h4 { font-size: 1.05rem; }
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-hover); }
+img { max-width: 100%; display: block; }
+
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
+
+/* Navigation */
+#nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--nav-height);
+  background: rgba(255,255,255,0.8); backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  border-bottom: none;
+}
+.nav-inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+  height: 100%; display: flex; align-items: center; justify-content: space-between;
+}
+.nav-left { display: flex; align-items: center; gap: clamp(1rem, 2vw, 2.5rem); flex: 1; min-width: 0; }
+.nav-logo { font-size: 1.2rem; font-weight: 700; color: var(--text); letter-spacing: -0.03em; }
+.nav-links { display: flex; gap: clamp(0.75rem, 1.4vw, 1.5rem); align-items: center; flex-wrap: nowrap; flex: 1; justify-content: space-evenly; }
+.nav-links a {
+  font-size: 0.82rem; color: var(--text-secondary); font-weight: 450;
+  padding: 0.3rem 0; transition: color 0.15s; white-space: nowrap;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-right { display: flex; align-items: center; gap: 0.75rem; }
+.lang-switch {
+  font-size: 0.78rem; color: var(--text-secondary); background: var(--bg-alt);
+  border: 1px solid var(--border-light); border-radius: 20px;
+  padding: 0.35rem 0.9rem; cursor: pointer; font-weight: 500;
+  transition: all 0.15s;
+}
+.lang-switch:hover { color: var(--text); border-color: var(--border); }
+.nav-cta {
+  font-size: 0.78rem; padding: 0.4rem 1.1rem; border-radius: 20px;
+  background: var(--accent); color: #fff; border: none; cursor: pointer;
+  font-weight: 500; font-family: inherit; transition: all 0.15s;
+}
+.nav-cta:hover { background: var(--accent-hover); }
+
+/* Dropdown Navigation */
+.nav-dropdown { position: relative; }
+.nav-dropdown > a { cursor: default; }
+.nav-dropdown-menu {
+  position: absolute; top: 100%; left: -1rem;
+  background: rgba(255,255,255,0.95); backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  border-radius: var(--radius-md); box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  min-width: 160px; padding: 0.5rem 0; opacity: 0; visibility: hidden;
+  transform: translateY(-8px); transition: all 0.2s ease;
+}
+.nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-dropdown-menu a {
+  display: block; padding: 0.5rem 1.5rem;
+  font-size: 0.8rem; color: var(--text-secondary);
+  white-space: nowrap; font-weight: 400;
+}
+.nav-dropdown-menu a:hover { background: rgba(0,0,0,0.04); color: var(--text); }
+
+/* Sections */
+.section { padding: 6rem 0; }
+.section-alt { background: var(--bg-alt); }
+.section-label {
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--accent); text-transform: uppercase; margin-bottom: 0.75rem;
+}
+.section-subtitle {
+  font-size: 1.1rem; color: var(--text-secondary); max-width: 560px;
+  margin-bottom: 3rem; line-height: 1.65;
+}
+
+/* Hero */
+#hero { padding-top: calc(var(--nav-height) + 4rem); padding-bottom: 5rem; background: var(--bg); }
+.hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center; }
+.hero-text h1 { margin-bottom: 1.2rem; }
+.hero-text p { font-size: 1.12rem; color: var(--text-secondary); max-width: 480px; line-height: 1.65; margin-bottom: 2rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn {
+  padding: 0.75rem 1.6rem; border-radius: 28px; font-size: 0.9rem;
+  font-weight: 500; font-family: inherit; cursor: pointer; border: none;
+  transition: all 0.15s; letter-spacing: -0.01em;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.btn-outline { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.btn-outline:hover { background: rgba(0,113,227,0.04); }
+
+.hero-visual {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.hero-metric {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+.hero-metric-item {
+  padding: 1.5rem; border-radius: var(--radius-lg);
+  background: var(--bg); border: 1px solid var(--border-light);
+  text-align: center;
+}
+.hero-metric-value {
+  font-size: 1.8rem; font-weight: 700; color: var(--accent);
+  letter-spacing: -0.02em; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+}
+.hero-metric-label { font-size: 0.78rem; color: var(--text-tertiary); margin-top: 0.2rem; }
+.hero-engines {
+  padding: 1.25rem; border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light); background: var(--bg);
+}
+.hero-engines-label { font-size: 0.75rem; color: var(--text-tertiary); margin-bottom: 0.6rem; font-weight: 500; }
+.hero-engines-row {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+}
+.hero-engines-row span {
+  font-size: 0.75rem; color: var(--text-secondary); font-weight: 500;
+}
+
+/* Stats */
+#stats { padding: 4rem 0; background: var(--bg-alt); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center; }
+.stat-value { font-size: 2.4rem; font-weight: 700; color: var(--accent); letter-spacing: -0.03em; }
+.stat-label { font-size: 0.85rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+/* Pain Points */
+.pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+.pain-card {
+  padding: 2rem; border-radius: var(--radius-lg);
+  background: var(--bg); border: 1px solid var(--border-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.pain-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.pain-card p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; }
+
+/* Features */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 1.5rem; }
+/* Product shot (dashboard mockup) */
+.product-shot { margin: 0 0 0.75rem; border-radius: 18px; border: 1px solid var(--border-light); background: #fff; box-shadow: 0 24px 60px rgba(0,30,80,0.10), 0 4px 14px rgba(0,0,0,0.04); overflow: hidden; font-size: 13px; }
+.ps-chrome { display: flex; align-items: center; gap: 0.5rem; height: 42px; padding: 0 1rem; background: #f5f5f7; border-bottom: 1px solid var(--border-light); }
+.ps-dots span { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.ps-url { flex: 1; max-width: 300px; margin: 0 auto; text-align: center; background: #fff; border: 1px solid var(--border-light); border-radius: 8px; font-size: 11.5px; color: var(--text-tertiary); padding: 0.28rem 1rem; }
+.ps-body { display: grid; grid-template-columns: 186px 1fr; }
+.ps-side { border-right: 1px solid var(--border-light); background: #fafafa; padding: 1.1rem 0.8rem; }
+.ps-side .ps-logo { font-weight: 700; letter-spacing: -0.02em; font-size: 14px; padding: 0 0.6rem 0.9rem; color: var(--text); }
+.ps-side a { display: block; padding: 0.42rem 0.6rem; border-radius: 7px; color: var(--text-secondary); font-size: 12.5px; margin-bottom: 2px; }
+.ps-side a.on { background: rgba(0,113,227,0.09); color: var(--accent); font-weight: 600; }
+.ps-main { padding: 1.1rem 1.4rem 1.4rem; min-width: 0; }
+.ps-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+.ps-top h5 { font-size: 15px; font-weight: 650; letter-spacing: -0.01em; }
+.ps-pills { display: flex; gap: 0.5rem; }
+.ps-pill { font-size: 11.5px; color: var(--text-secondary); border: 1px solid var(--border-light); border-radius: 7px; padding: 0.3rem 0.7rem; background: #fff; }
+.ps-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin-bottom: 0.9rem; }
+.ps-kpi { border: 1px solid var(--border-light); border-radius: 12px; padding: 0.75rem 0.9rem; }
+.ps-kpi .k { font-size: 11.5px; color: var(--text-tertiary); margin-bottom: 0.3rem; }
+.ps-kpi .v { font-size: 21px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ps-kpi .d { font-size: 11px; color: #1d7a3d; margin-top: 0.2rem; }
+.ps-charts { display: grid; grid-template-columns: 1.65fr 1fr; gap: 0.8rem; }
+.ps-panel { border: 1px solid var(--border-light); border-radius: 12px; padding: 0.85rem 0.9rem; min-width: 0; }
+.ps-panel .t { font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.6rem; }
+.ps-panel svg { display: block; width: 100%; height: auto; }
+.ps-bars .row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.55rem; }
+.ps-bars .n { width: 74px; flex-shrink: 0; font-size: 11.5px; color: var(--text-secondary); }
+.ps-bars .track { flex: 1; height: 10px; border-radius: 5px; background: #f0f0f3; overflow: hidden; }
+.ps-bars .fill { height: 100%; border-radius: 5px; background: var(--accent); }
+.ps-bars .val { width: 34px; text-align: right; font-size: 11px; color: var(--text-tertiary); font-variant-numeric: tabular-nums; }
+.ps-note { text-align: center; font-size: 0.8rem; color: var(--text-tertiary); margin: 0 0 3.5rem; }
+@media (max-width: 760px) {
+  .ps-side { display: none; }
+  .ps-body { grid-template-columns: 1fr; min-height: 0; }
+  .ps-kpis { grid-template-columns: repeat(2, 1fr); }
+  .ps-charts { grid-template-columns: 1fr; }
+}
+.feature-card {
+  padding: 2rem 2rem 2rem; border-radius: var(--radius-lg);
+  background: var(--bg); border: 1px solid var(--border-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.feature-card h3 { font-size: 1.1rem; }
+.feature-card p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.65; }
+
+/* Why Section */
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.why-item {
+  padding: 2rem; border-radius: var(--radius-lg); text-align: center;
+  background: var(--bg); border: 1px solid var(--border-light);
+}
+.why-value { font-size: 2.2rem; font-weight: 700; color: var(--accent); letter-spacing: -0.03em; }
+.why-label { font-size: 0.85rem; color: var(--text-tertiary); margin-top: 0.3rem; }
+
+/* Use Cases */
+.cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
+.case-card {
+  padding: 2rem; border-radius: var(--radius-lg); text-align: center;
+  background: var(--bg); border: 1px solid var(--border-light);
+  transition: transform 0.2s;
+}
+.case-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.case-card h4 { font-size: 1rem; margin-bottom: 0.4rem; }
+.case-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; }
+
+/* FAQ */
+.faq-list { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border-light); }
+.faq-item:first-child { border-top: 1px solid var(--border-light); }
+.faq-q {
+  padding: 1.25rem 0; font-size: 1rem; font-weight: 600; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  user-select: none; transition: color 0.15s;
+}
+.faq-q:hover { color: var(--accent); }
+.faq-q::after { content: '+'; font-size: 1.4rem; font-weight: 300; color: var(--text-tertiary); transition: transform 0.3s; }
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; }
+.faq-item.open .faq-a { max-height: 400px; padding-bottom: 1.25rem; }
+
+/* Contact */
+
+.contact-form-group textarea { min-height: 100px; resize: vertical; }
+
+/* Blog Preview */
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.blog-card {
+  border-radius: var(--radius-lg); background: var(--bg); border: 1px solid var(--border-light);
+  overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;
+}
+.blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.blog-card-body { padding: 1.5rem; }
+.blog-card-date { font-size: 0.75rem; color: var(--text-tertiary); margin-bottom: 0.4rem; }
+.blog-card h4 { font-size: 1rem; margin-bottom: 0.4rem; line-height: 1.35; }
+.blog-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.55; }
+
+/* CTA */
+.cta-section { text-align: center; padding: 5rem 0; background: var(--bg); }
+.cta-section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+.cta-section p { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; }
+
+/* Footer */
+footer { background: var(--bg-alt); border-top: 1px solid var(--border-light); padding: 4.5rem 0 2rem; }
+.footer-brand { font-size: 1.15rem; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 0.6rem; }
+.footer-brand img { height: 28px; width: auto; }
+.footer-desc { color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.7rem; line-height: 1.7; max-width: 480px; }
+.footer-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2rem; margin-bottom: 3rem; }
+.footer-col h4 { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 1rem; font-weight: 600; }
+.footer-col a { display: block; color: var(--text-secondary); font-size: 0.84rem; padding: 0.32rem 0; transition: color 0.15s; white-space: nowrap; }
+.footer-col a:hover { color: var(--accent); }
+.footer-bottom { border-top: 1px solid var(--border-light); padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-size: 0.78rem; color: var(--text-tertiary); }
+.footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; padding-bottom: 2.5rem; margin-bottom: 2.5rem; border-bottom: 1px solid var(--border-light); }
+.footer-brand img { height: 28px; width: auto; }
+.footer-cta { font-size: 0.82rem; padding: 0.55rem 1.4rem; border-radius: 22px; background: transparent; color: var(--text); border: 1px solid var(--border); cursor: pointer; font-weight: 500; font-family: inherit; transition: all 0.2s; white-space: nowrap; }
+.footer-cta:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Responsive */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ===== Responsive Design ===== */
+/* Tablet Landscape (769px - 1024px) */
+@media (max-width: 1024px) {
+  .container { padding: 0 1.75rem; }
+  .nav-inner { padding: 0 1.75rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+
+/* Tablet Portrait / Small Desktop (769px - 900px) */
+
+/* Mobile (481px - 768px) */
+
+/* Small Mobile (< 480px) */
+
+/* Tablet Portrait / Small Desktop (769px - 900px) */
+
+/* Hamburger Menu */
+.hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; background: none; border: none; cursor: pointer; padding: 8px; gap: 5px; z-index: 101; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+.mobile-nav-overlay { display: none; position: fixed; top: var(--nav-height); left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 99; flex-direction: column; padding: 2rem; overflow-y: auto; }
+.mobile-nav-overlay.active { display: flex; }
+.mobile-nav-overlay a { font-size: 1.1rem; color: var(--text); padding: 0.75rem 0; border-bottom: 1px solid var(--border-light); text-decoration: none; font-weight: 500; }
+.mobile-nav-overlay a:hover { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .container { padding: 0 1.5rem; }
+  .nav-inner { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .hero-header { padding: 2rem 0 1rem; }
+  h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+  h2 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); }
+  .page-content { padding-top: 5rem; }
+  .feature-grid, .value-grid, .module-grid, .industry-grid, .audience-grid,
+  .wiki-grid, .gain-grid, .training-card { 
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 1.25rem; 
+  }
+  .comparison-table, .detail-table { 
+    display: block; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+  }
+}
+
+/* Mobile (481px - 768px) */
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
+  .nav-inner { padding: 0 1.25rem; }
+  .nav-links { display: none; }
+  .nav-left { gap: 1rem; }
+  .nav-logo { font-size: 1.05rem; }
+  .nav-right { gap: 0.5rem; }
+  .lang-switch { font-size: 0.72rem; padding: 0.3rem 0.75rem; }
+  h1 { font-size: clamp(1.55rem, 5vw, 1.85rem); line-height: 1.2; margin-bottom: 0.6rem; }
+  h2 { font-size: clamp(1.2rem, 3.5vw, 1.4rem); margin-top: 1.75rem; }
+  h3 { font-size: 1.05rem; }
+  h4 { font-size: 0.95rem; }
+  p, li { font-size: 0.92rem; }
+  .page-content { padding-top: 4.5rem; }
+  .footer-grid { grid-template-columns: 1fr !important; gap: 1.5rem; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+  .feature-grid, .value-grid, .module-grid, .industry-grid, .audience-grid,
+  .wiki-grid, .gain-grid, .training-card, .solutions-grid, .process-grid,
+  .service-grid, .pain-grid, .faq-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  .hero-inner { grid-template-columns: 1fr !important; gap: 1.5rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .feature-card, .value-card, .module-card, .industry-block, .audience-card,
+  .wiki-entry, .gain-card, .training-card, .pain-item, .faq-item {
+    padding: 1rem !important;
+  }
+  .cta-section { padding: 2rem 0.75rem; text-align: center; }
+  .cta-btn { 
+    width: 100%; 
+    max-width: 320px; 
+    margin: 0 auto; 
+    padding: 0.85rem 1.5rem; 
+    font-size: 0.95rem; 
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .comparison, .detail-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+  }
+  .comparison-table, .detail-table { min-width: 600px; font-size: 0.85rem; }
+  .comparison-table th, .comparison-table td,
+  .detail-table th, .detail-table td { padding: 0.5rem 0.6rem; }
+  .breadcrumb { font-size: 0.78rem; }
+  .mission-box, .highlight-box { padding: 1.25rem; margin: 1.5rem 0; }
+  .module-detail, .process-step, .step-content { padding: 1rem; }
+  .price-tag { font-size: 1.1rem; }
+  img { max-width: 100%; height: auto; }
+  .strategy-list li { padding: 0.6rem 0; }
+  .faq-q { font-size: 0.95rem; }
+  .faq-a { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .nav-inner { padding: 0 1rem; }
+  h1 { font-size: clamp(1.35rem, 6.5vw, 1.6rem); }
+  h2 { font-size: clamp(1.08rem, 4.5vw, 1.25rem); }
+  h3 { font-size: 0.98rem; }
+  p, li { font-size: 0.88rem; }
+  .page-content { padding-top: 4rem; }
+  .cta-btn { max-width: 100%; font-size: 0.9rem; }
+  .feature-card, .value-card, .module-card, .industry-block {
+    padding: 0.85rem !important;
+  }
+  .footer-grid { gap: 1rem; }
+  .footer-brand { font-size: 1.15rem; }
+  .footer-desc { font-size: 0.82rem; }
+  .nav-logo { font-size: 1rem; }
+  .lang-switch { font-size: 0.7rem; padding: 0.25rem 0.65rem; }
+  .breadcrumb { font-size: 0.72rem; }
+  .module-num { font-size: 1.5rem; }
+  .step-number { font-size: 1.3rem; }
+}
+
+.hero-text h1 { text-wrap: initial; word-break: keep-all; }
+@media print { body { display: none !important; } }
+
+/* Typography: avoid orphan last lines (balance headings, pretty body) */
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li, blockquote { text-wrap: balance; }
+.hero-inner p.lead { text-wrap: balance; }
+</style>
+<link rel="stylesheet" href="nav-tech.css?v=20260713b">
+<!-- SEO/GEO social + canonical (auto) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SkyQuest">
+<meta property="og:title" content="SkyQuest Visibility OS — 让品牌成为 AI 时代的首选答案">
+<meta property="og:description" content="SkyQuest 是领先的 AI 可见度操作系统。实时监测 12 个 AI 引擎中的品牌表现，AI 驱动内容生成与策略优化。">
+<meta property="og:url" content="https://skyquest.cn/">
+<meta property="og:image" content="https://skyquest.cn/skyquest-logo-constellation.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SkyQuest Visibility OS — 让品牌成为 AI 时代的首选答案">
+<meta name="twitter:description" content="SkyQuest 是领先的 AI 可见度操作系统。实时监测 12 个 AI 引擎中的品牌表现，AI 驱动内容生成与策略优化。">
+<meta name="twitter:image" content="https://skyquest.cn/skyquest-logo-constellation.png">
+<link rel="alternate" hreflang="zh-CN" href="https://skyquest.cn/">
+<link rel="alternate" hreflang="en" href="https://skyquest.cn/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://skyquest.cn/">
+</head>
+<body onselectstart="return false" oncontextmenu="return false" oncopy="return false">
+<nav id="nav"><div class="nav-inner">
+  <div class="nav-left">
+    <a href="#hero" class="nav-logo" data-i18n="brand">SkyQuest</a>
+    <div class="nav-links">
+      <a href="#features" data-i18n="nav_features">功能</a>
+      <a href="solutions.html" data-i18n="nav_cases">解决方案</a>
+      <div class="nav-dropdown">
+        <a href="javascript:void(0)" data-i18n="nav_svc">核心服务</a>
+        <div class="nav-dropdown-menu">
+          <a href="service-model.html" data-i18n="nav_service">服务模式</a>
+          <a href="managed-modules.html" data-i18n="nav_svc_managed">全托管运营</a>
+          <a href="managed-process.html" data-i18n="nav_svc_process">服务流程</a>
+          <a href="training.html" data-i18n="nav_svc_training">GEO 培训</a>
+          <a href="social-media.html" data-i18n="nav_svc_social">海外社媒运营</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="javascript:void(0)" data-i18n="nav_website">网站建设</a>
+        <div class="nav-dropdown-menu">
+          <a href="wordpress-foreign-trade-website.html" data-i18n="nav_web1">外贸独立站</a>
+          <a href="wordpress-custom-site-development.html" data-i18n="nav_web2">独立站定制</a>
+          <a href="wordpress-development-website.html" data-i18n="nav_web3">开发建站</a>
+          <a href="website-template-development.html" data-i18n="nav_web4">模板建站</a>
+          <a href="website-custom-development.html" data-i18n="nav_web5">定制建站</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="javascript:void(0)" data-i18n="nav_aimart">AI超市</a>
+        <div class="nav-dropdown-menu">
+          <a href="ai-supermarket.html" data-i18n="nav_ai_overview">AI超市总览</a>
+          <a href="ai-office.html" data-i18n="nav_ai_office">AI办公</a>
+          <a href="ai-marketing.html" data-i18n="nav_ai_marketing">AI营销</a>
+          <a href="ai-customer-service.html" data-i18n="nav_ai_cs">AI客服</a>
+          <a href="ai-digital-employee.html" data-i18n="nav_ai_digital">AI数字员工</a>
+          <a href="ai-automation.html" data-i18n="nav_ai_auto">AI自动化</a>
+          <a href="ai-knowledge-base.html" data-i18n="nav_ai_kb">AI知识库</a>
+          <div class="nav-subdrop">
+            <a href="ai-industry.html" data-i18n="nav_ai_industry">行业方案</a>
+            <div class="nav-subdrop-menu">
+              <a href="ai-industry.html#restaurant" data-i18n="nav_ind_food">餐饮</a>
+              <a href="ai-industry.html#beauty" data-i18n="nav_ind_beauty">美业</a>
+              <a href="ai-industry.html#manufacturing" data-i18n="nav_ind_mfg">制造业</a>
+              <a href="ai-industry.html#education" data-i18n="nav_ind_edu">教育</a>
+              <a href="ai-industry.html#retail" data-i18n="nav_ind_retail">零售</a>
+              <a href="ai-industry.html#travel" data-i18n="nav_ind_travel">旅游</a>
+              <a href="ai-industry.html#realestate" data-i18n="nav_ind_estate">房地产</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="javascript:void(0)" data-i18n="nav_method">SVF方法论</a>
+        <div class="nav-dropdown-menu">
+          <a href="svf/" data-i18n="nav_svf">什么是 SVF</a>
+          <a href="svf-faq/" data-i18n="nav_svf_faq">SVF FAQ</a>
+          <a href="svf-glossary/" data-i18n="nav_svf_glossary">SVF 术语表</a>
+          <a href="svf-score/" data-i18n="nav_svf_score">SVF Score</a>
+          <a href="methodology/" data-i18n="nav_svf_whitepaper">SVF 白皮书</a>
+          <a href="methodology/paper/" data-i18n="nav_svf_paper">SVF 学术论文</a>
+          <a href="methodology/appendix/" data-i18n="nav_svf_appendix">SVF 方法学附录</a>
+          <a href="research/2026-geo-baseline/" data-i18n="nav_geo_baseline">2026 GEO 行业基线报告</a>
+        </div>
+      </div>
+
+      <a href="#faq" data-i18n="nav_faq">常见问题</a>
+      <a href="#blog" data-i18n="nav_blog">博客</a>
+      <a href="about.html" data-i18n="nav_about">关于我们</a>
+      <a href="tel:13186999044" data-i18n="nav_contact">13186999044</a>
+    </div>
+  </div>
+  
+<button class="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  <div class="nav-right">
+    <button class="lang-switch" id="langToggle" onclick="toggleLang()" aria-label="Switch language">EN</button>
+    <button class="nav-cta" data-i18n="nav_cta" onclick="location.href='tel:13186999044'">致电 13186999044</button>
+  </div>
+</div></nav>
+<!-- HERO -->
+<main>
+<section id="hero"><div class="container"><div class="hero-inner">
+  <div class="hero-text">
+    <h1 data-i18n="hero_title">让出海品牌成为<span style="color:var(--accent);font-style:normal">AI</span><br>搜索引擎的<span style="color:var(--accent);font-style:normal">首选答案</span></h1>
+    <p data-i18n="hero_subtitle">SkyQuest 专注海外 GEO/AEO 优化，帮助企业在 ChatGPT、Gemini、Perplexity 等 AI 引擎中建立品牌权威。通过 SVF 方法论驱动的全托管优化，系统性提升品牌在数十亿次 AI 对话中的真实可见度。</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-i18n="hero_cta1" onclick="location.href='tel:13186999044'">致电 13186999044</button>
+      <a href="geo-why.html" class="btn btn-outline" data-i18n="hero_cta2">为什么要做 GEO</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-metric">
+      <div class="hero-metric-item"><div class="hero-metric-value">12+</div><div class="hero-metric-label" data-i18n="metric_engines">AI 引擎覆盖</div></div>
+      <div class="hero-metric-item"><div class="hero-metric-value">11</div><div class="hero-metric-label" data-i18n="metric_models">内容生成模型</div></div>
+      <div class="hero-metric-item"><div class="hero-metric-value">&lt;30s</div><div class="hero-metric-label" data-i18n="metric_speed">单轮监测响应</div></div>
+      <div class="hero-metric-item"><div class="hero-metric-value">95%</div><div class="hero-metric-label" data-i18n="metric_accuracy">品牌识别准确率</div></div>
+    </div>
+    <div class="hero-engines">
+      <div class="hero-engines-label" data-i18n="engines_label">支持的 AI 引擎</div>
+      <div class="hero-engines-row">
+        <span>ChatGPT</span><span>Gemini</span><span>Claude</span><span>Perplexity</span><span>Grok</span><span>DeepSeek</span><span>Copilot</span><span>Qwen</span><span>Kimi</span><span data-i18n="eng_ernie">文心一言</span><span data-i18n="eng_doubao">豆包</span><span>Meta AI</span>
+      </div>
+    </div>
+  </div>
+</div></div></section>
+
+<!-- PAIN POINTS -->
+<section id="pain" class="section"><div class="container">
+  <div class="section-label" data-i18n="pain_label">为什么需要 SkyQuest</div>
+  <h2 data-i18n="pain_title">AI 搜索时代，品牌正在失去可见度</h2>
+  <p class="section-subtitle" data-i18n="pain_subtitle">当用户从「搜索」转向「问答」，传统的 SEO 已经不够。</p>
+  <div class="pain-grid">
+    <div class="pain-card"><h3 data-i18n="pain1_title">AI 问答场景中品牌完全缺席</h3><p data-i18n="pain1_desc">目标客户在 ChatGPT、Gemini 等 AI 助手中查询行业相关问题，品牌内容从未被引擎引用——数十亿次 AI 对话与你无关。</p></div>
+    <div class="pain-card"><h3 data-i18n="pain2_title">品牌信息失真或含负面内容</h3><p data-i18n="pain2_desc">AI 引擎从碎片化网络源拼凑品牌信息，时常出现事实错误或过时描述，用户接收到的品牌认知与实际严重偏离。</p></div>
+    <div class="pain-card"><h3 data-i18n="pain3_title">竞品对比中系统性处于劣势</h3><p data-i18n="pain3_desc">AI 引擎对「谁更好」类问题天然倾向引用信息更结构化的品牌——你的差异化优势因为没有被 AI 系统化收录而被持续忽略。</p></div>
+    <div class="pain-card"><h3 data-i18n="pain4_title">缺乏可执行的 GEO 落地路径</h3><p data-i18n="pain4_desc">行业普遍意识到 GEO 的重要性，但绝大多数企业不知道从何入手：如何让品牌语料被 AI 引擎优先索引、如何持续优化。</p></div>
+    <div class="pain-card"><h3 data-i18n="pain5_title">AI 生态投入无法量化衡量</h3><p data-i18n="pain5_desc">在 AI 可见度上投入了团队资源和预算，却没有一套指标体系能数据化地展现优化前后品牌在 AI 引擎中的真实变化。</p></div>
+  </div>
+</div></section>
+
+<!-- CORE SERVICES -->
+<section id="services" class="section"><div class="container">
+  <div class="section-label" data-i18n="services_label">核心服务</div>
+  <h2 data-i18n="services_title">全方位的 GEO/AEO 优化解决方案</h2>
+  <p class="section-subtitle" data-i18n="services_subtitle">从 AI 引擎可见度诊断到全托管优化运营，SkyQuest 覆盖品牌在 AI 时代的每一个关键触点。</p>
+  <div class="services-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.25rem;">
+    <div class="service-card" style="padding:2rem;border-radius:var(--radius-lg);background:var(--bg);border:1px solid var(--border-light);transition:transform 0.2s,box-shadow 0.2s;display:flex;flex-direction:column;">
+      <div class="svc-price" style="font-size:0.85rem;color:var(--accent);font-weight:600;margin-bottom:0.5rem;" data-i18n="svc1_price">5000元/月起</div>
+      <h3 style="font-size:1.1rem;margin-bottom:0.5rem;" data-i18n="svc1_title">海外 GEO 全托管优化</h3>
+      <p style="color:var(--text-secondary);font-size:0.88rem;line-height:1.65;flex:1;margin-bottom:1rem;" data-i18n="svc1_desc">从 AI 引擎定位到多语种内容优化，全流程托管服务。覆盖 ChatGPT、Gemini 等 12 引擎的品牌权威建设，让你的品牌成为 AI 回答中的首选引用源。</p>
+      <a href="managed-modules.html" style="font-size:0.85rem;color:var(--accent);font-weight:500;" data-i18n="svc1_link">了解详情 &rarr;</a>
+    </div>
+    <div class="service-card" style="padding:2rem;border-radius:var(--radius-lg);background:var(--bg);border:1px solid var(--border-light);transition:transform 0.2s,box-shadow 0.2s;display:flex;flex-direction:column;">
+      <div class="svc-price" style="font-size:0.85rem;color:var(--accent);font-weight:600;margin-bottom:0.5rem;" data-i18n="svc2_price">1,000元起</div>
+      <h3 style="font-size:1.1rem;margin-bottom:0.5rem;" data-i18n="svc2_title">GEO / AEO 战略咨询</h3>
+      <p style="color:var(--text-secondary);font-size:0.88rem;line-height:1.65;flex:1;margin-bottom:1rem;" data-i18n="svc2_desc">基于 SVF 方法论对品牌在 AI 搜索生态中的表现进行深度诊断，定位差距与机会，制定可落地的精准优化路线图和优先级策略。</p>
+      <a href="service-model.html" style="font-size:0.85rem;color:var(--accent);font-weight:500;" data-i18n="svc2_link">了解详情 &rarr;</a>
+    </div>
+    <div class="service-card" style="padding:2rem;border-radius:var(--radius-lg);background:var(--bg);border:1px solid var(--border-light);transition:transform 0.2s,box-shadow 0.2s;display:flex;flex-direction:column;">
+      <div class="svc-price" style="font-size:0.85rem;color:var(--accent);font-weight:600;margin-bottom:0.5rem;" data-i18n="svc3_price">1.2万元起</div>
+      <h3 style="font-size:1.1rem;margin-bottom:0.5rem;" data-i18n="svc3_title">GEO 系统化培训</h3>
+      <p style="color:var(--text-secondary);font-size:0.88rem;line-height:1.65;flex:1;margin-bottom:1rem;" data-i18n="svc3_desc">系统化的 SVF 方法论培训课程，帮助市场与运营团队掌握 AI 时代的品牌优化核心能力——从策略制定到效果评估的完整闭环。</p>
+      <a href="training.html" style="font-size:0.85rem;color:var(--accent);font-weight:500;" data-i18n="svc3_link">查看课程 &rarr;</a>
+    </div>
+    <div class="service-card" style="padding:2rem;border-radius:var(--radius-lg);background:var(--bg);border:1px solid var(--border-light);transition:transform 0.2s,box-shadow 0.2s;display:flex;flex-direction:column;">
+      <div class="svc-price" style="font-size:0.85rem;color:var(--accent);font-weight:600;margin-bottom:0.5rem;" data-i18n="svc4_price">免费开始</div>
+      <h3 style="font-size:1.1rem;margin-bottom:0.5rem;" data-i18n="svc4_title">SkyQuest AI 监测平台</h3>
+      <p style="color:var(--text-secondary);font-size:0.88rem;line-height:1.65;flex:1;margin-bottom:1rem;" data-i18n="svc4_desc">SaaS 形态的 AI 可见度操作系统。12 引擎实时监测 + 品牌追踪 + 竞品对标分析，让团队以数据驱动的方式持续优化品牌的 AI 生态存在感。</p>
+      <a href="#features" style="font-size:0.85rem;color:var(--accent);font-weight:500;" data-i18n="svc4_link">探索产品 &rarr;</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- STATS -->
+<section id="stats" class="section"><div class="container">
+  <div class="section-label" data-i18n="stats_label">SkyQuest 核心数据</div>
+  <h2 data-i18n="stats_title">不只是监测工具，是 AI 可见度操作系统</h2>
+  <p class="section-subtitle" data-i18n="stats_subtitle">SkyQuest 将监测、分析、生成和分发整合为单一平台，提供端到端的 AI 品牌管理能力。</p>
+  <div class="stats-grid">
+    <div><div class="stat-value">12+</div><div class="stat-label" data-i18n="stat1">AI 引擎覆盖</div></div>
+    <div><div class="stat-value">11</div><div class="stat-label" data-i18n="stat2">内容生成模型</div></div>
+    <div><div class="stat-value">50+</div><div class="stat-label" data-i18n="stat3">支持市场/语言</div></div>
+    <div><div class="stat-value">&lt;30s</div><div class="stat-label" data-i18n="stat4">单轮监测响应</div></div>
+  </div>
+</div></section>
+
+<!-- FEATURES -->
+<section id="features" class="section section-alt"><div class="container">
+  <div class="section-label" data-i18n="features_label">产品核心能力</div>
+  <h2 data-i18n="features_title">六大引擎，一站式 AI 可见度操作系统</h2>
+  <p class="section-subtitle" data-i18n="features_subtitle">从监测到生成、从追踪到分发，覆盖 AI 品牌管理的完整闭环。</p>
+  <figure class="product-shot" role="img" aria-label="SkyQuest 品牌可见度监测平台界面">
+    <div class="ps-chrome"><div class="ps-dots"><span style="background:#e8e8ed"></span><span style="background:#e8e8ed"></span><span style="background:#e8e8ed"></span></div><div class="ps-url">app.skyquest.cn/dashboard</div><div style="width:52px"></div></div>
+    <div class="ps-body">
+      <div class="ps-side">
+        <div class="ps-logo">SkyQuest</div>
+        <a class="on" data-i18n="psd_nav1">概览</a><a data-i18n="psd_nav2">引擎监测</a><a data-i18n="psd_nav3">内容生成</a><a data-i18n="psd_nav4">品牌追踪</a><a data-i18n="psd_nav5">竞品对比</a><a data-i18n="psd_nav6">语料管理</a><a data-i18n="psd_nav7">报告中心</a>
+      </div>
+      <div class="ps-main">
+        <div class="ps-top"><h5 data-i18n="psd_title">品牌可见度概览</h5><div class="ps-pills"><span class="ps-pill" data-i18n="psd_pill_brand">品牌：Aurora Home</span><span class="ps-pill" data-i18n="psd_pill_days">近 30 天</span></div></div>
+        <div class="ps-kpis">
+          <div class="ps-kpi"><div class="k" data-i18n="psd_kpi1">BCR 综合可见度</div><div class="v">72.4</div><div class="d" data-i18n="psd_kpi1d">+8.2 较上月</div></div>
+          <div class="ps-kpi"><div class="k" data-i18n="psd_kpi2">AI 引用率</div><div class="v">44.6%</div><div class="d" data-i18n="psd_kpi2d">+5.1% 较上月</div></div>
+          <div class="ps-kpi"><div class="k" data-i18n="psd_kpi3">品牌提及次数</div><div class="v">1,284</div><div class="d" data-i18n="psd_kpi3d">+212 较上月</div></div>
+          <div class="ps-kpi"><div class="k" data-i18n="psd_kpi4">正面情感占比</div><div class="v">89%</div><div class="d" data-i18n="psd_kpi4d">+3% 较上月</div></div>
+        </div>
+        <div class="ps-charts">
+          <div class="ps-panel">
+            <div class="t" data-i18n="psd_chart1">AI 引用率趋势 · 近 30 天</div>
+            <svg viewBox="0 0 620 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs><linearGradient id="psg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0071e3" stop-opacity="0.18"/><stop offset="1" stop-color="#0071e3" stop-opacity="0"/></linearGradient></defs>
+              <g stroke="#f0f0f3" stroke-width="1"><line x1="8" x2="612" y1="148.1" y2="148.1"/><line x1="8" x2="612" y1="118.3" y2="118.3"/><line x1="8" x2="612" y1="88.5" y2="88.5"/><line x1="8" x2="612" y1="58.7" y2="58.7"/><line x1="8" x2="612" y1="28.9" y2="28.9"/></g>
+              <path d="M8.0 140.7 L28.8 132.3 L49.7 127.5 L70.5 130.7 L91.3 125.3 L112.1 125.9 L133.0 123.5 L153.8 120.6 L174.6 115.2 L195.4 107.1 L216.3 108.5 L237.1 102.8 L257.9 99.5 L278.8 96.0 L299.6 87.3 L320.4 86.5 L341.2 82.8 L362.1 77.7 L382.9 75.3 L403.7 75.1 L424.6 74.4 L445.4 65.7 L466.2 59.2 L487.0 50.5 L507.9 44.1 L528.7 45.8 L549.5 40.4 L570.3 31.6 L591.2 28.8 L612.0 26.0 L612.0 158 L8.0 158 Z" fill="url(#psg)"/>
+              <path d="M8.0 140.7 L28.8 132.3 L49.7 127.5 L70.5 130.7 L91.3 125.3 L112.1 125.9 L133.0 123.5 L153.8 120.6 L174.6 115.2 L195.4 107.1 L216.3 108.5 L237.1 102.8 L257.9 99.5 L278.8 96.0 L299.6 87.3 L320.4 86.5 L341.2 82.8 L362.1 77.7 L382.9 75.3 L403.7 75.1 L424.6 74.4 L445.4 65.7 L466.2 59.2 L487.0 50.5 L507.9 44.1 L528.7 45.8 L549.5 40.4 L570.3 31.6 L591.2 28.8 L612.0 26.0" fill="none" stroke="#0071e3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+              <circle cx="612.0" cy="26.0" r="4" fill="#0071e3" stroke="#fff" stroke-width="2"/>
+              <text x="8.0" y="174" font-size="10" fill="#a1a1a6">21.5%</text>
+              <text x="608.0" y="16.0" font-size="11" font-weight="600" fill="#1d1d1f" text-anchor="end">44.6%</text>
+            </svg>
+          </div>
+          <div class="ps-panel ps-bars">
+            <div class="t" data-i18n="psd_chart2">引擎引用分布</div>
+            <div class="row"><span class="n">ChatGPT</span><div class="track"><div class="fill" style="width:42%"></div></div><span class="val">42%</span></div>
+            <div class="row"><span class="n">Gemini</span><div class="track"><div class="fill" style="width:38%"></div></div><span class="val">38%</span></div>
+            <div class="row"><span class="n">Perplexity</span><div class="track"><div class="fill" style="width:31%"></div></div><span class="val">31%</span></div>
+            <div class="row"><span class="n">Claude</span><div class="track"><div class="fill" style="width:28%"></div></div><span class="val">28%</span></div>
+            <div class="row"><span class="n">DeepSeek</span><div class="track"><div class="fill" style="width:24%"></div></div><span class="val">24%</span></div>
+            <div class="row"><span class="n">Copilot</span><div class="track"><div class="fill" style="width:19%"></div></div><span class="val">19%</span></div>
+            <div class="row"><span class="n">Grok</span><div class="track"><div class="fill" style="width:15%"></div></div><span class="val">15%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <p class="ps-note" data-i18n="psd_note">SkyQuest 监测平台界面 · 示例数据</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      
+      <h3 data-i18n="f1_title">AI 引擎监测</h3>
+      <p data-i18n="f1_desc">实时扫描 12 个主流 AI 引擎的品牌引用状态。集成 NER 实体识别、情感分析和 BCR 可见度评分，多维量化品牌在 AI 生态中的真实存在感。支持自定义关键词和品牌实体监测，自动生成周期性报告。</p>
+    </div>
+    <div class="feature-card">
+      
+      <h3 data-i18n="f2_title">AI 内容生成</h3>
+      <p data-i18n="f2_desc">11 引擎驱动的智能内容工厂。RAG 增强检索 + Schema.org 结构化注入 + 自适应维度匹配，为每个 AI 引擎定向生成高引用率内容。内置品牌语料库管理和提示词优化模板。</p>
+    </div>
+    <div class="feature-card">
+      
+      <h3 data-i18n="f3_title">品牌追踪看板</h3>
+      <p data-i18n="f3_desc">跨引擎品牌提及追踪与情感趋势分析。支持自定义追踪关键词、品牌实体和话题标签，以可视化图表呈现品牌 AI 可见度的变化趋势，自动生成 PDF 或链接分享的监测报告。</p>
+    </div>
+    <div class="feature-card">
+      
+      <h3 data-i18n="f4_title">竞品对标分析</h3>
+      <p data-i18n="f4_desc">追踪任意竞争对手在 AI 引擎中的可见度、情感倾向和引用模式。量化品牌差距，发现差异化机会，基于数据制定精准的赶超策略。支持批量竞品添加和自动对比报告生成。</p>
+    </div>
+    <div class="feature-card">
+      
+      <h3 data-i18n="f5_title">语料策略管理</h3>
+      <p data-i18n="f5_desc">系统化管理品牌语料库。优化提示词模板、结构化内容资产、行业关键词矩阵，确保 AI 引擎始终引用品牌预设的标准答案。内置版本控制和语料效果 A/B 测试。</p>
+    </div>
+    <div class="feature-card">
+      
+      <h3 data-i18n="f6_title">多渠道媒体分发</h3>
+      <p data-i18n="f6_desc">一键将优化内容发布到多个渠道：WordPress、Webflow、社交媒体平台、Webhook 自定义集成。统一内容策略，确保全网品牌信息一致性，提升 AI 交叉验证的可信度。</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- WHY -->
+<section id="why" class="section"><div class="container">
+  <div class="section-label" data-i18n="why_label">为什么选择 SkyQuest</div>
+  <h2 data-i18n="why_title">专为 AI 时代构建的品牌操作系统</h2>
+  <p class="section-subtitle" data-i18n="why_subtitle">传统 SEO 工具为搜索引擎设计——SkyQuest 为 AI 引擎设计。</p>
+  <div class="why-grid">
+    <div class="why-item"><div class="why-value">12</div><div class="why-label" data-i18n="why1">原生 AI 引擎连接</div></div>
+    <div class="why-item"><div class="why-value">95%</div><div class="why-label" data-i18n="why2">NER 品牌识别准确率</div></div>
+    <div class="why-item"><div class="why-value">11</div><div class="why-label" data-i18n="why3">内置内容生成模型</div></div>
+    <div class="why-item"><div class="why-value">24/7</div><div class="why-label" data-i18n="why4">自动化监测与告警</div></div>
+  </div>
+</div></section>
+
+<!-- CASES -->
+<section id="cases" class="section section-alt"><div class="container">
+  <div class="section-label" data-i18n="cases_label">适用场景</div>
+  <h2 data-i18n="cases_title">无论你是谁，AI 可见度都已不可忽视</h2>
+  <p class="section-subtitle" data-i18n="cases_subtitle">SkyQuest 适配多种业务形态，从初创到跨国企业均可快速部署。</p>
+  <div class="cases-grid">
+    <div class="case-card"><h4 data-i18n="case1_title">出海品牌</h4><p data-i18n="case1_desc">在 ChatGPT、Gemini 等全球 AI 引擎中建立品牌权威，让海外用户在 AI 问答中自然发现你的品牌。</p></div>
+    <div class="case-card"><h4 data-i18n="case2_title">B2B 企业</h4><p data-i18n="case2_desc">AI 引擎正成为采购决策的关键信息源。确保你的产品在竞品对比中被 AI 准确、正面地引用和推荐。</p></div>
+    <div class="case-card"><h4 data-i18n="case3_title">内容驱动品牌</h4><p data-i18n="case3_desc">通过 AI 优化内容策略，提升品牌内容在 AI 回答中的引用率和准确度。让每一篇内容都服务于 AI 可见度。</p></div>
+    <div class="case-card"><h4 data-i18n="case4_title">代理商 & 咨询公司</h4><p data-i18n="case4_desc">用数据量化为客户创造的价值。多租户架构支持同时管理多个客户品牌，独立数据隔离与专属报告。</p></div>
+  </div>
+</div></section>
+
+<!-- BLOG -->
+<section id="blog" class="section"><div class="container">
+  <div class="section-label" data-i18n="blog_label">最新洞察</div>
+  <h2 data-i18n="blog_title">GEO 与 AI 可见度前沿观察</h2>
+  <p class="section-subtitle" data-i18n="blog_subtitle">来自 SkyQuest 团队的研究、案例分析与行业趋势。</p>
+  <div class="blog-grid">
+    <a href="blog.html#article-1" style="text-decoration:none;color:inherit;"><div class="blog-card">
+      <div class="blog-card-body"><div class="blog-card-date">2026-06-15</div><h4 data-i18n="blog1_title">GEO 入门指南：什么是生成式引擎优化？</h4><p data-i18n="blog1_desc">全面解读 GEO 的概念、与传统 SEO 的核心区别，以及为什么每家企业现在就需要关注 AI 搜索中的品牌可见度。</p></div>
+    </div></a>
+    <a href="blog.html#article-2" style="text-decoration:none;color:inherit;"><div class="blog-card">
+      <div class="blog-card-body"><div class="blog-card-date">2026-06-08</div><h4 data-i18n="blog2_title">ChatGPT vs Gemini vs Perplexity：品牌在三大引擎中的表现差异</h4><p data-i18n="blog2_desc">基于 SkyQuest 平台数据的实证研究——同一品牌在不同 AI 引擎中的引用率和推荐倾向存在显著差异。</p></div>
+    </div></a>
+    <a href="blog.html#article-3" style="text-decoration:none;color:inherit;"><div class="blog-card">
+      <div class="blog-card-body"><div class="blog-card-date">2026-05-28</div><h4 data-i18n="blog3_title">案例研究：一家 B2B 企业如何将 AI 可见度提升 340%</h4><p data-i18n="blog3_desc">从监测到优化，完整复盘一家 SaaS 企业在 90 天内实现 AI 品牌提及率翻三倍的实操策略。</p></div>
+    </div></a>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section id="faq" class="section section-alt"><div class="container">
+  <div class="section-label" data-i18n="faq_label">常见问题</div>
+  <h2 data-i18n="faq_title">关于 AI 可见度，你最关心的问题</h2>
+  <p class="section-subtitle" data-i18n="faq_subtitle">以下是我们从客户那里收集到的最常问的五个问题。</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false" data-i18n="faq1_q">什么是 AI 可见度（GEO）？</div>
+      <div class="faq-a" data-i18n="faq1_a">AI 可见度（Generative Engine Optimization，生成式引擎优化）是让品牌在 ChatGPT、Gemini、Perplexity 等 AI 问答引擎中被准确引用和推荐的系统性优化方法。与传统 SEO 关注网页在搜索结果中的排名不同，GEO 关注的是 AI 引擎如何理解、引用和推荐你的品牌——因为 AI 引擎生成的是一段自然语言回答，而非链接列表。对企业而言，这意味着需要全新的策略来确保品牌信息在这些 AI 回答中被正确呈现。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false" data-i18n="faq2_q">SkyQuest 支持哪些 AI 引擎？</div>
+      <div class="faq-a" data-i18n="faq2_a">SkyQuest 当前覆盖 12 个主流 AI 引擎：ChatGPT（GPT-4o / o3）、Gemini（2.5 Pro）、Perplexity（Sonar）、Claude（3.5 Sonnet / Opus）、Grok、DeepSeek、Copilot、Qwen、Kimi、文心一言、豆包和 Meta AI。引擎列表持续扩展中——我们的监测矩阵每月都会根据全球 AI 引擎的市场份额变化进行调整。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false" data-i18n="faq3_q">SkyQuest 与传统 SEO 工具有什么区别？</div>
+      <div class="faq-a" data-i18n="faq3_a">根本区别在于优化的目标对象不同。传统 SEO 工具（如 Ahrefs、Semrush）优化搜索引擎（Google、Bing）中的网页排名——核心指标是关键词排名和点击率。SkyQuest 优化 AI 引擎（ChatGPT、Gemini 等）中的品牌引用——核心指标是品牌提及率（BCR）、引用准确度和情感倾向。两者面向的是完全不同的流量入口。AI 引擎通过语义理解生成自然语言答案，而非返回链接列表，因此需要专用的监测和优化工具。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false" data-i18n="faq4_q">如何衡量 AI 可见度的优化效果？</div>
+      <div class="faq-a" data-i18n="faq4_a">SkyQuest 提供多维度量化指标：(1) 品牌提及率（Brand Citation Rate / BCR）——在特定关键词/问题场景中品牌被 AI 提及的比例；(2) 情感倾向评分——AI 对品牌的描述是正面、中性还是负面；(3) 竞品对比排名——你的品牌相对于竞品在 AI 推荐中的位置；(4) 可见度趋势图——随时间变化的品牌可见度曲线；(5) 引用准确度评估——AI 引用的品牌信息是否与官方信息一致。所有数据支持按时间、引擎、关键词和地域维度下钻分析。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false" data-i18n="faq5_q">部署 SkyQuest 需要多长时间？</div>
+      <div class="faq-a" data-i18n="faq5_a">SaaS 版本即开即用——注册后 5 分钟内可完成初始品牌配置并启动首次监测扫描，约 5-15 分钟后即可查看第一批监测结果。企业私有化部署根据定制需求通常需要 1-3 个工作日完成环境搭建和数据接入。我们提供全程部署支持和操作培训，确保团队能够快速上手使用。</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact" class="section"><div class="container" style="text-align:center;">
+  <div class="section-label" data-i18n="contact_label">直接联系</div>
+  <h2 data-i18n="contact_title" style="font-size:2.5rem;margin:0.5rem 0;">13186999044</h2>
+  <p data-i18n="contact_subtitle" style="font-size:1.1rem;color:var(--text-secondary);margin-bottom:1.5rem;">Ocean · SkyQuest 市场研究负责人</p>
+  <div style="display:flex;gap:0.9rem;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:13186999044" class="btn btn-primary" style="font-size:1.2rem;padding:1rem 2.5rem;" data-i18n="contact_call_btn">立即致电</a>
+    <a href="https://wa.me/6282279876375" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:1.2rem;padding:1rem 2.5rem;" data-i18n="contact_wa_btn">WhatsApp 咨询</a>
+  </div>
+</div></section>
+
+<!-- CTA -->
+<section id="cta" class="cta-section"><div class="container">
+  <h2 data-i18n="cta_title">让品牌在 AI 时代脱颖而出</h2>
+  <p data-i18n="cta_subtitle">加入数百家企业，开始系统化提升你的 AI 可见度。</p>
+  <button class="btn btn-primary" style="font-size:1rem;padding:0.85rem 2rem" data-i18n="cta_btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">预约免费演示</button>
+</div></section>
+
+<!-- FOOTER -->
+</main>
+<footer><div class="container">
+  <div class="footer-top">
+    <div class="footer-brand-block">
+      <div class="footer-brand"><img src="skyquest-nav-logo.png?v=1783606121" alt="SkyQuest"><span class="footer-brand-en">SKYQUEST</span><span class="footer-brand-zh" data-i18n="footer_brand_sub">· 天问智能 ·</span></div>
+      <p class="footer-desc" data-i18n="footer_desc">SkyQuest Visibility OS — 领先的 AI 可见度操作系统。<br>帮助品牌在 AI 搜索时代建立、监测和优化 AI 生态中的品牌存在感。</p>
+    </div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4 data-i18n="footer_svc">核心服务</h4>
+      <a href="service-model.html" data-i18n="fl_service">服务模式</a>
+      <a href="managed-modules.html" data-i18n="nav_svc_managed">全托管运营</a>
+      <a href="managed-process.html" data-i18n="nav_svc_process">服务流程</a>
+      <a href="solutions.html" data-i18n="fl_solutions">行业解决方案</a>
+      <a href="social-media.html" data-i18n="nav_svc_social">海外社媒运营</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="fl_training">培训服务</h4>
+      <a href="training.html" data-i18n="nav_tr_overview">培训总览</a>
+      <a href="training-executive.html" data-i18n="nav_tr_exec">高管培训</a>
+      <a href="training-manager.html" data-i18n="nav_tr_mgr">业务主管培训</a>
+      <a href="training-specialist.html" data-i18n="nav_tr_spec">执行者培训</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_website">建站服务</h4>
+      <a href="wordpress-foreign-trade-website.html" data-i18n="fw1">外贸独立站</a>
+      <a href="wordpress-custom-site-development.html" data-i18n="fw2">独立站定制</a>
+      <a href="wordpress-development-website.html" data-i18n="fw3">开发建站</a>
+      <a href="website-template-development.html" data-i18n="fw4">模板建站</a>
+      <a href="website-custom-development.html" data-i18n="fw5">定制建站</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="nav_aimart">AI超市</h4>
+      <a href="ai-supermarket.html" data-i18n="nav_ai_overview">AI超市总览</a>
+      <a href="ai-office.html" data-i18n="nav_ai_office">AI办公</a>
+      <a href="ai-marketing.html" data-i18n="nav_ai_marketing">AI营销</a>
+      <a href="ai-customer-service.html" data-i18n="nav_ai_cs">AI客服</a>
+      <a href="ai-digital-employee.html" data-i18n="nav_ai_digital">AI数字员工</a>
+      <a href="ai-automation.html" data-i18n="nav_ai_auto">AI自动化</a>
+      <a href="ai-knowledge-base.html" data-i18n="nav_ai_kb">AI知识库</a>
+      <a href="ai-industry.html" data-i18n="nav_ai_industry">行业方案</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="nav_method">SVF方法论</h4>
+      <a href="svf/" data-i18n="nav_svf">什么是 SVF</a>
+      <a href="svf-faq/" data-i18n="nav_svf_faq">SVF FAQ</a>
+      <a href="svf-glossary/" data-i18n="nav_svf_glossary">SVF 术语表</a>
+      <a href="svf-score/" data-i18n="nav_svf_score">SVF Score</a>
+      <a href="methodology/" data-i18n="nav_svf_whitepaper">SVF 白皮书</a>
+      <a href="methodology/paper/" data-i18n="nav_svf_paper">SVF 学术论文</a>
+      <a href="methodology/appendix/" data-i18n="nav_svf_appendix">SVF 方法学附录</a>
+      <a href="research/2026-geo-baseline/" data-i18n="nav_geo_baseline">2026 GEO 报告</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_resources">知识库</h4>
+      <a href="geo-guide.html" data-i18n="fl5">GEO 指南</a>
+      <a href="geo-why.html" data-i18n="fl_why">为什么选择 GEO</a>
+      <a href="wiki.html" data-i18n="fl_wiki">GEO 知识库</a>
+      <a href="common-issues.html" data-i18n="fl_painpoints">常见痛点</a>
+      <a href="api-docs.html" data-i18n="fl6">API 文档</a>
+      <a href="blog.html" data-i18n="fl7">博客</a>
+      <a href="changelog.html" data-i18n="fl8">更新日志</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_company">公司</h4>
+      <a href="about.html" data-i18n="fl9">关于我们</a>
+      <a href="faq.html" data-i18n="fl_faq">常见问题</a>
+      <a href="privacy.html" data-i18n="fl11">隐私政策</a>
+      <a href="terms.html" data-i18n="fl12">服务条款</a>
+      <a href="tel:13186999044" data-i18n="footer_c1">13186999044</a>
+      <a href="https://wa.me/6282279876375" target="_blank" rel="noopener" data-i18n="footer_c_wa">WhatsApp 咨询</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 SkyQuest 天问智能. All rights reserved.</span><span data-i18n="footer_legal">SkyQuest版权所有，未经授权禁止复制和建立镜像 · 浙ICP备2026052120号</span><span>SkyQuest.cn</span></div>
+</div></footer>
+
+<script src="js/protect.js?v=20260713b"></script>
+
+<script src="js/i18n.js?v=20260714d"></script>
+<script src="js/lang-switch.js?v=20260713b"></script>
+</body>
+</html>
